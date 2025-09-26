@@ -1,4 +1,4 @@
-# Intelli-Helmet (Sentry Alert)
+# Intelli-Helmet 
 
 A smart wearable alert system for soldiers and security personnel.  
 The Intelli-Helmet detects falls or injuries, monitors vital signs, pinpoints GPS location, and instantly transmits panic/emergency alerts to a remote base station.  
@@ -59,9 +59,9 @@ The Intelli-Helmet detects falls or injuries, monitors vital signs, pinpoints GP
 
 ### 1. Clone this repo
 ```bash
-git clone https://github.com/yourusername/intelli-helmet.git
+git clone https://github.com/yourusername/intelli-helmet.git```
 
-### 2. Install Libraries in Arduino IDE
+2. Install Libraries in Arduino IDE
 
 i. WiFi.h (built-in with ESP32 board package)
 
@@ -77,7 +77,7 @@ vi. MAX3010x (SparkFun MAX3010x library)
 
 vii. (Optional) TinyGsmClient for SIM800L
 
-### Upload Sender Code
+3. Upload Sender Code
 
 i. Connect ESP32 (helmet) via USB.
 
@@ -85,7 +85,7 @@ ii. Select correct COM port.
 
 iii. Upload /sender/sender.ino.
 
-### 4. Upload Receiver Code
+4. Upload Receiver Code
 
 i. Connect second ESP32 (base) via USB.
 
@@ -93,19 +93,19 @@ ii. Select correct COM port.
 
 iii. Upload /receiver/receiver.ino.
 
-### 5. Wiring
+5. Wiring
 
 i. Follow hardware/intelli-helmet_schematic.png for pin connections.
 
 ii. Power SIM800L with a separate 4V stable supply capable of ≥2A bursts.
 
-### 6. Test
+6. Test
 
 i. Open Serial Monitor on both boards (115200 baud).
 
 ii. Press panic switch or simulate a fall → watch OLED + buzzer on receiver.
 
-### ⚙️ Configuration Tips
+⚙️ Configuration Tips
 
 i. Edit ssid, password, receiverIP, and receiverPort in the sender code to match your network and receiver ESP32 IP.
 
@@ -113,17 +113,17 @@ ii. Adjust fall detection threshold constants in the code for your use case.
 
 iii. Change pin numbers if using different ESP32 dev board layouts.
 
-### 🤝 Contributing
+🤝 Contributing
 
 Pull requests and feature suggestions are welcome!
 If you build your own hardware variant, add wiring diagrams or PCB layouts in /hardware.
 
-### 📄 License
+📄 License
 
 This project is released under the MIT License.
 You’re free to use, modify, and distribute with attribution.
 
-### 📸 Demo
+📸 Demo
 
 
 
