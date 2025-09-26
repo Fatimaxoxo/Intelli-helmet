@@ -59,9 +59,9 @@ The Intelli-Helmet detects falls or injuries, monitors vital signs, pinpoints GP
 
 ### 1. Clone this repo
 ```bash
-git clone https://github.com/yourusername/intelli-helmet.git```
+git clone https://github.com/yourusername/intelli-helmet.git
 
-2. Install Libraries in Arduino IDE
+```2. Install Libraries in Arduino IDE
 
 i. WiFi.h (built-in with ESP32 board package)
 
